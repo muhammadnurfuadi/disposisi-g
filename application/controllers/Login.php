@@ -9,10 +9,8 @@ class Login extends CI_Controller
         }
         public function index()
         {
-        $this->form_validation->set_rules('email','email', 'required|
-        trim');
-        $this->form_validation->set_rules('password', 'Password', 'require
-        d|trim');
+        $this->form_validation->set_rules('email','email', 'required|trim');
+        $this->form_validation->set_rules('password', 'Password', 'required|trim');
         if ($this->form_validation->run() == false) {
         $this->load->view('login/index');
         } else {
