@@ -7,12 +7,11 @@
 </ol>
 <div class="card mb-4">
 <div class="card-body">
-<form action="<?php echo site_url('admin/surat_masuk/edit') ?>" method="post" enctype="multipart/form-data" >
+<form action="<?php echo site_url('admin/surat_ajuan/edit') ?>" method="post" enctype="multipart/form-data" >
 <div class="mb-3">
 <label >NO SURAT MASUK <code>*</code></label>
 <input class="form-control" type="hidden" name="id" value="<?=$surat->id;?>" required />
-<input class="form-control" type="text" name="no_surat" value="<?=$surat->no_surat;?>" placeholder="NO SURAT MASUK" disabled requi
-red />
+<input class="form-control" type="text" name="no_surat" value="<?=$surat->no_surat;?>" placeholder="NO SURAT MASUK" disabled required />
 </div>
 <div class="mb-3">
 <label >PERIHAL SURAT <code>*</code></label>
@@ -20,9 +19,7 @@ red />
 </div>
 <div class="mb-3">
 <label >TANGGAL SURAT <code>*</code></label>
-<input class="form-control" type="date" name="tgl_surat"
-value="<?=$surat->tgl_surat;?>" placeholder="TANGGAL SURAT" disabled requ
-ired />
+<input class="form-control" type="date" name="tgl_surat"value="<?=$surat->tgl_surat;?>" placeholder="TANGGAL SURAT" disabled required />
 </div>
 <div class="mb-3">
 <label >SURAT DARI <code>*</code></label>
